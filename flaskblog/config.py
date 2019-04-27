@@ -8,7 +8,7 @@ class Config:
     MAIL_USE_TLS = True
     MAIL_USERNAME='saudababs00@gmail.com'
     MAIL_PASSWORD='Her4631!'
-
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://student:1234@localhost/writerly'
 
 
 class DevConfig(Config):
@@ -21,9 +21,9 @@ class DevConfig(Config):
 class ProdConfig(Config):
     '''
     '''
+    pass
 
-
-    SQLALCHEMY_DATABASE_URI =os.environ.get('DATABASE_URL')
+    # SQLALCHEMY_DATABASE_URI =os.environ.get('DATABASE_URL')
 
 config_options = {
 'development':DevConfig,
