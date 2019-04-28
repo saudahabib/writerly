@@ -13,3 +13,12 @@ def home():
 @main.route("/about")
 def about():
     return render_template('about.html', title = 'About')
+
+@main.route('/')
+def quotes():
+    '''
+    View root page that returns the index page and its data
+    '''
+    quotes = get_quote()
+
+    return render_template('base.html',quotes=quotes)

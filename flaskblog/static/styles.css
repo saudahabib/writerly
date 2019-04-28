@@ -2,7 +2,7 @@ body {
   background: #fafafa;
   color: #333333;
   margin-top: 5rem;
-  background-image: url('https://images.pexels.com/photos/2068898/pexels-photo-2068898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-image: url('https://images.pexels.com/photos/1919283/pexels-photo-1919283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Gentium Book Basic', cursive;
@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, #comment {
 }
 
 .bg-steel {
-  background-color: #5f788a;
+  background-color: salmon;
 }
 
 .site-header .navbar-nav .nav-link {
@@ -126,5 +126,10 @@ a.article-title:hover {
 }
 
 #comtitle{
-  color: #9932CC;
+  color: salmon;
+}
+
+#subscribe{
+  width: 100%;
+
 }

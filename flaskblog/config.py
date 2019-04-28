@@ -9,6 +9,7 @@ class Config:
     MAIL_USERNAME='saudababs00@gmail.com'
     MAIL_PASSWORD='Her4631!'
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://student:1234@localhost/writerly'
+    QUOTES_API='http://quotes.stormconsultancy.co.uk/random.json'
 
 
 class DevConfig(Config):
