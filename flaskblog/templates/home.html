@@ -1,6 +1,8 @@
 {% extends 'base.html'%}
 {% block content %}
-
+{% for quote in quotes %}
+  <p>{{quote.quote}}</p>
+{% endfor %}
   {% for post in pitches.items %}
       <article class="media content-section">
         <img class = "rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/'+ post.author.image_file) }}" alt="">

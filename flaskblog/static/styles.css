@@ -133,3 +133,12 @@ a.article-title:hover {
   width: 100%;
 
 }
+
+.btn-default{
+  border: 2px solid #e3e3e3;
+  background-color: salmon;
+}
+
+.btn-default:hover{
+  background-color: #fcb0fc;
+}

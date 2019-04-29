@@ -1,5 +1,6 @@
 from flask import render_template, request, Blueprint
 from flaskblog.models import Pitch
+from flaskblog.request import get_quote
 
 main = Blueprint('main',__name__)
 
@@ -8,18 +9,10 @@ main = Blueprint('main',__name__)
 def home():
     page = request.args.get('page', 1, type=int)
     pitches = Pitch.query.order_by(Pitch.date_posted.desc()).paginate(page=page, per_page=5)
-    return render_template('home.html', pitches = pitches)
+    quotes = get_quote()
+    
+    return render_template('home.html', pitches = pitches,quotes=quotes)
 
 @main.route("/about")
 def about():
     return render_template('about.html', title = 'About')
-
-@main.route('/')
-def quotes():
-    '''
-    View root page that returns the index page and its data
-    '''
-    quotes = get_quote()
-    k="ktrsrtdr"
-
-    return render_template('base.html',quotes=quotes,k=k)
