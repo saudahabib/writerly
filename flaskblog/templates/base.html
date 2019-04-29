@@ -49,9 +49,11 @@
         <div class="col-md-3">
           <div class="content-section">
             <h3>Sometimes all you need is a little inspiration...</h3>
+            Show
+            {{k}}
               {% for quote in quotes %}
-                  <p class='text-muted'>{{quote.author}}: {{quote.quote}}</p>
-                {% endfor %}
+                  <p class='text-muted'>Tebu Show something:{{quotes.author}}: {{quotes.quote}}</p>
+              {% endfor %}
                 <img src="https://static.collectui.com/shots/3072293/notify-me-large" alt="subscribe" id="subscribe">
               <ul class="list-group">
                 <li class="list-group-item list-group-item-light btn btn-light">Subscribe to our blog now!!!</li>

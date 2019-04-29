@@ -15,7 +15,7 @@ def get_quote():
         get_quote_data = url.read()
         get_quote_response = json.loads(get_quotes_data)
 
-        single_quote = None
+        displayed_quote = None
 
         if get_movies_response:
             quote = get_quote_response
