@@ -16,7 +16,7 @@ This is a blogging application that enables users to log in and create posts. A 
 ## Cloning and running
 Clone the application using git clone(this copies the app onto your device). In your terminal:
 
-  ```  $ git clone https://github.com/saudahabib/writerly/
+  ```  $ git clone https://github.com/saudahabib/writerly/ ```
 
   ```  $ cd writerly```
 
