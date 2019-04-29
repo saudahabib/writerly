@@ -14,7 +14,7 @@ def home():
 def about():
     return render_template('about.html', title = 'About')
 
-@main.route('/post/7')
+@main.route('/')
 def quotes():
     '''
     View root page that returns the index page and its data
